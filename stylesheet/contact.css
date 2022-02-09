@@ -1,0 +1,35 @@
+section#contato {
+    min-height: 50vh;
+    position: relative;
+}
+section#contato > article {
+    display: flex;
+    justify-content:safe;
+}
+section#contato > article > ul {
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+    list-style-type: none;
+    margin-right: 50px;
+}
+section#contato > article > ul > li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+section#contato > article > ul > li > a {
+    margin-left: 30px;
+    font-size: 26px;
+    font-weight: 300;
+}
+@media (max-width: 1300px){
+    section#contato > article {
+        display: initial;
+    }
+    section#contato > article > ul {
+        margin-right: 0px;
+        width: 100%;
+    }
+  }

@@ -1,0 +1,15 @@
+section#sobre {
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.5) );
+    position: relative;
+}
+section#sobre > video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}

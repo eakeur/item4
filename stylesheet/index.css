@@ -1,0 +1,34 @@
+:root {
+    --primary: #01155b;
+    --primarysoft: #a5b7d3;
+    --accent: #c50000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    display: hidden;
+    background-color: transparent
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 0, 0)
+  }

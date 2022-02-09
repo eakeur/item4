@@ -1,0 +1,15 @@
+h1 {
+    font-weight: 900;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-block-end: 10px;
+}
+
+h1.red {
+    color: var(--accent);
+}
+
+p {
+    font-size: 24px;
+    margin: 0;
+}
