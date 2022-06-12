@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(313deg,rgba(255, 255, 255, 0),rgb(216, 215, 215)), url("/assets/images/glass-window.jpg");
-    backdrop-filter: blur(5px) saturate(100%) contrast(45%) brightness(130%);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 500ms;
@@ -27,15 +26,20 @@
         flex-direction: column;
         justify-content: space-between;
         padding-inline: 50px;
-        background-image: linear-gradient(rgba(216, 215, 215, 0.5), rgb(216, 215, 215)), url("/assets/images/glass-window.jpg");
+        background-image: linear-gradient(rgba(216, 215, 215, 0.5), rgba(216, 215, 215, 0.733)), url("/assets/images/glass-window.jpg");
     }
     .home > div  {
         margin-top: 50px;
         width: unset;
     }
     .home > img  {
-        width: unset;
+        max-width: 85%;
         height: unset;
+    }
+}
+@media (max-width: 920px) {
+    .home > img  {
+        max-width: 90%;
     }
 }
 

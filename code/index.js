@@ -1,9 +1,10 @@
 window.onload = main
 
 function main(){
-    InitializeListeners()
+    initializeListeners()
+    runFirstCycle()
 }
 
-function RunFirstCycle(){
-    Listeners.NavLinks.ChangeNavLinksColor()
+function runFirstCycle(){
+    updateColorOnHash()
 }

@@ -4,30 +4,26 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     bottom: 50px;
     left: 50px;
-    width: 50%;
-    height: 30px;
-
+    width: 55%;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px) saturate(100%) contrast(45%) brightness(130%);
-
     border-radius: 57px;
+    -webkit-backdrop-filter: blur(5px) saturate(100%) contrast(45%) brightness(130%);
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
     z-index: 10;
-
-
+    transition: 500ms;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1020px) {
     nav {
         bottom: 0px;
         left: 0px;
-        height: 50px;
         width: 100%;
         border-radius: 0px;
-        overflow-x: scroll;
+        font-size: 10pt;
     }
 }
 
@@ -39,10 +35,10 @@ nav > a {
     text-transform: uppercase;
     transition-duration: 300ms;
     text-align: center;
-    color: #0062ff;
+    color: #004bc4;
 }
 
 
 nav > a:hover, nav > a.current {
-    color: #ff0000;
+    color: #a80202;
 }

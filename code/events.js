@@ -1,46 +1,25 @@
-function InitializeListeners(){
-    window.addEventListener("hashchange", Listeners.NavLinks.ChangeColorByHash)
-    window.addEventListener("scroll", Listeners.NavLinks.ChangeColorOnScroll)
-    element("arrow").addEventListener("click", Listeners.ArrowDown.OnClick)
+function initializeListeners(){
+    window.addEventListener("hashchange", updateColorOnHash)
+    window.addEventListener("scroll", updateColorOnScroll)
 }
 
-const Listeners = {
+function updateColorOnHash(){
+    const page = window.location.hash.replace("#", "")
+    for (const el of Elements) {
+        const classes = el.link.classList
+        page == el.id ? classes.add(CURRENT_CLASS_NAME) : classes.remove(CURRENT_CLASS_NAME)
+    }
+}
 
-    ArrowDown: {
-        OnClick: () => {
-            scroll(undefined, scrollY + (window.innerHeight || document.documentElement.clientHeight))
-        }
-    },
+function updateColorOnScroll(){
+    for (const el of Elements) {
+        const classes = el.link.classList
+        isElementActive(el.element) ? classes.add(CURRENT_CLASS_NAME) : classes.remove(CURRENT_CLASS_NAME)
+    }
+}
 
-    NavLinks: {
-        ChangeColorByBackground: (id) => {
-            
-        },
-
-        ChangeColorByHash: () => {
-            var page = window.location.hash.replace("#", "")
-            MAPPING.forEach(map => {
-                if (page == map.sectionID){
-                    map.linkOBJ.classList.add("current")
-                }
-                else map.linkOBJ.classList.remove("current")
-            })
-        },
-    
-        ChangeColorOnScroll: () => {
-            MAPPING.forEach(map => {
-                var bounding = map.sectionOBJ.getBoundingClientRect()
-                var client = (window.innerHeight || document.documentElement.clientHeight)
-                if (bounding.top <= client/8 && bounding.bottom >= client - 800) {
-                    map.linkOBJ.classList.add("current")
-                    if (map.sectionID == ABOUT_SECTION_ID || map.sectionID == MAIN_SECTION_ID) {
-                        MAPPING.forEach(m => m.linkOBJ.classList.add("over-dark-bg"))
-                    } else {
-                        MAPPING.forEach(m => m.linkOBJ.classList.remove("over-dark-bg"))
-                    }
-                }
-                else map.linkOBJ.classList.remove("current")
-            })
-        }
-    },
+function goToWhatsapp(){
+    const value = element('whatsapp-message').value
+    const url = `https://api.whatsapp.com/send?phone=5511992272903&text=` + encodeURIComponent(value)
+    window.open(url, '_blank').focus();
 }
