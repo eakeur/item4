@@ -1,6 +1,8 @@
 section#contato {
     min-height: 50vh;
     position: relative;
+    padding-inline: 150px;
+    padding-block: 50px;
 }
 section#contato > article {
     display: flex;
@@ -24,7 +26,13 @@ section#contato > article > ul > li > a {
     font-size: 26px;
     font-weight: 300;
 }
+
+
 @media (max-width: 1300px){
+
+    section#contato {
+        padding-inline: 50px;
+    }
     section#contato > article {
         display: initial;
     }

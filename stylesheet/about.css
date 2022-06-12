@@ -1,5 +1,6 @@
 section#sobre {
-    min-height: 100vh;
+    padding-inline: 150px;
+    padding-block: 50px;
     color: white;
     background: linear-gradient( rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.5) );
     position: relative;
@@ -12,4 +13,10 @@ section#sobre > video {
     object-fit: cover;
     position: absolute;
     z-index: -1;
+}
+
+@media (max-width: 1080px) {
+    section#sobre {
+        padding-inline: 50px;
+    }
 }

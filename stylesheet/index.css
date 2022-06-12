@@ -12,6 +12,47 @@ html, body {
     font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 36pt;
+  text-transform: uppercase;
+  margin-block-end: 25px;
+}
+
+h1.red {
+  color: var(--accent);
+}
+
+p {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding-inline: 150px;
+  padding-block: 50px;
+}
+
+@media (max-width: 1080px) {
+  section {
+    padding-inline: 50px;
+  }
+}
+
+
+footer {
+  width: 100%;
+  height: 224px;
+  background-image: url("/assets/images/default-bg.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
 
 ::-webkit-scrollbar {
     width: 10px;

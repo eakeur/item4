@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="stylesheet/section.css">
     <link rel="stylesheet" href="stylesheet/text.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
-    <link rel="stylesheet" href="stylesheet/landing.css">
+    <link rel="stylesheet" href="stylesheet/home.css">
     <link rel="stylesheet" href="stylesheet/products.css">
     <link rel="stylesheet" href="stylesheet/about.css">
     <link rel="stylesheet" href="stylesheet/contact.css">
@@ -25,48 +25,60 @@
         <a id="sobre-link"    href="#sobre"    title="Ver nossa para história">Quem somos</a>
         <a id="contato-link"  href="#contato"  title="Ver como entrar em contato conosco">Contato</a>
     </nav>
-    <section id="inicio">
-        <div id="boas-vindas">
-            <img src="assets/images/logo-slogan.png" alt="Logo da Item 4" title="Logo da Item 4">
+
+
+
+    <section id="inicio" class="home">
+        <img src="assets/images/logo-slogan.png" alt="Logo da Item 4" title="Logo da Item 4">
+        <div>
+            <h1>Como podemos te atender hoje?</h1>
+            <p>Nossa equipe está pronta para te entregar materiais de qualidade e juntos construirmos um futuro limpo e seguro</p>
+            <div class="send-input">
+                <input placeholder="Envie seu pedido via Whatsapp">
+                <button>Enviar</button>
+            </div>
         </div>
-        <img id = "arrow" width="50px" height="50px" src="assets/images/arrow.gif" alt="Tem mais coisa pra você ver abaixo" title="Tem mais coisa pra você ver abaixo">
     </section>
-    <section id="produtos">
-        <h1 class="title">Tudo para sua esquadria</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nulla a cursus pulvinar, augue quam pulvinar purus, vitae ultricies leo dolor sed nisi. In hac habitasse platea dictumst.
-        </p>
-        <br>
-        <br>
-        <div id="products-desc">
-            <div class="product-section">
-                <img src="assets/images/logo-slogan.png" alt="Logo da Item 4" title="Logo da Item 4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nulla a cursus pulvinar, augue quam pulvinar purus, vitae ultricies leo dolor sed nisi. In hac habitasse platea dictumst.
-                </p>
+
+
+
+
+    <section id="produtos" class="products">
+        <h1>Nossos produtos</h1>
+        <div>
+            <div class="product">
+                <img src="assets/images/espuma.jpeg" alt="Logo da Item 4" title="Logo da Item 4">
+                <h2>Espumas adesivas</h2>
             </div>
-            <div class="product-section">
-                <img src="assets/images/logo-slogan.png" alt="Logo da Item 4" title="Logo da Item 4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nulla a cursus pulvinar, augue quam pulvinar purus, vitae ultricies leo dolor sed nisi. In hac habitasse platea dictumst.
-                </p>
+            <div class="product">
+                <img src="assets/images/borracha.jpg" alt="Logo da Item 4" title="Logo da Item 4">
+                <h2>Borrachas</h2>
             </div>
-            <div class="product-section">
-                <img src="assets/images/logo-slogan.png" alt="Logo da Item 4" title="Logo da Item 4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nulla a cursus pulvinar, augue quam pulvinar purus, vitae ultricies leo dolor sed nisi. In hac habitasse platea dictumst.
-                </p>
+            <div class="product">
+                <img src="assets/images/escova.webp" alt="Logo da Item 4" title="Logo da Item 4">
+                <h2>Escovas vedadoras</h2>
             </div>
-            <div class="product-section">
-                <img src="assets/images/logo-slogan.png" alt="Logo da Item 4" title="Logo da Item 4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nulla a cursus pulvinar, augue quam pulvinar purus, vitae ultricies leo dolor sed nisi. In hac habitasse platea dictumst.
-                </p>
+            <div class="product">
+                <img src="assets/images/tarucel.jpg" alt="Logo da Item 4" title="Logo da Item 4">
+                <h2>Tarucel</h2>
+            </div>
+            <div class="product">
+                <img src="assets/images/tela.avif" alt="Logo da Item 4" title="Logo da Item 4">
+                <h2>Telas</h2>
             </div>
         </div>
         <br>
-        <div id="catalog-link">
-            <a href="/assets/docs/catalog.pdf" target="_blank">Acesse nosso catálogo</a>
+        <div id="catalog-link" class="catalog-link">
+            <a href="/assets/docs/catalog.pdf" target="_blank">Veja nosso catálogo</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#01155b" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
               </svg>
         </div>
     </section>
+
+
+
+
     <section id="sobre">
         <video autoplay muted loop id="myVideo">
             <source src="/assets/videos/borracha.mp4" type="video/mp4">
